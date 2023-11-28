@@ -24,6 +24,7 @@ public class SpikeCollider : MonoBehaviour
             Debug.Log("Player has touched spikes");
 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Debug.Log("The scene has been reloaded");
         }
     }
 }
