@@ -2651,7 +2651,6 @@ GameObject:
   - component: {fileID: 977053541}
   - component: {fileID: 977053540}
   - component: {fileID: 977053543}
-  - component: {fileID: 977053544}
   m_Layer: 0
   m_Name: Spikes
   m_TagString: Untagged
@@ -2757,33 +2756,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e94c1addb112c7478e5956513c6cea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &977053544
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977053538}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1066537094
 GameObject:
   m_ObjectHideFlags: 0
@@ -5442,6 +5414,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sign
       objectReference: {fileID: 0}
+    - target: {fileID: 2686177812201479685, guid: 7f06d76a5a48eff429bb3af7bf01b932, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5781681828253594952, guid: 7f06d76a5a48eff429bb3af7bf01b932, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.55
@@ -5482,6 +5458,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8963985412571786772, guid: 7f06d76a5a48eff429bb3af7bf01b932, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5499,9 +5479,9 @@ GameObject:
   - component: {fileID: 2046203350}
   - component: {fileID: 2046203349}
   - component: {fileID: 2046203348}
-  - component: {fileID: 2046203352}
   - component: {fileID: 2046203347}
   - component: {fileID: 2046203346}
+  - component: {fileID: 2046203352}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player

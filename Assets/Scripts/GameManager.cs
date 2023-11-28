@@ -43,4 +43,7 @@ public class GameManager : MonoBehaviour
         //Check for prompted input
         //Display text on UI
         //Debug what message was displayed
+
+    //Error Debugging
+        //Checking for null whenever referencing another script
 }
