@@ -18,6 +18,7 @@ public class FirstSign : MonoBehaviour
         if ((inTrigger) && (Input.GetKeyDown(KeyCode.E)))
         {
             Debug.Log("Player has read the First Sign");
+
         }
     }
 

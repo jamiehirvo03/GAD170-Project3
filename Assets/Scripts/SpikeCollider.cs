@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class SpikeCollider : MonoBehaviour
 {
+    public GameManager manager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +24,7 @@ public class SpikeCollider : MonoBehaviour
         {
             Debug.Log("Player has touched spikes");
 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            Debug.Log("The scene has been reloaded");
+            manager.GetComponent<GameManager>().playerDeath();
         }
     }
 }
