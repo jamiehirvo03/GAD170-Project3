@@ -24,7 +24,11 @@ public class SpikeCollider : MonoBehaviour
         {
             Debug.Log("Player has touched spikes");
 
-            manager.GetComponent<GameManager>().playerDeath();
+            if (manager != null)
+            {
+                manager.GetComponent<GameManager>().playerDeath();
+            }
+            
         }
     }
 }

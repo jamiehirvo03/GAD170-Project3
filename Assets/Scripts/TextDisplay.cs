@@ -50,6 +50,6 @@ public class TextDisplay : MonoBehaviour
 
     public void fourthPopup()
     {
-        textPopup.text = "You see that platform up there??\nI heard that maybe if you collect all coins you can\nunlock something pretty cool!";
+        textPopup.text = "You see that platform up there??\nI heard that maybe if you collect all coins you can unlock something pretty cool!";
     }
 }
