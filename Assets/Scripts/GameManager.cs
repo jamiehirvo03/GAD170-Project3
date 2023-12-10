@@ -50,10 +50,11 @@ public class GameManager : MonoBehaviour
         //Debug coin count
         Debug.Log($"Player collected a new coin! Their current count is: {coinsCollected}");
     }
-    private void errorMessage()
-    {
-        //Error Debugging
-        //Checking for null whenever referencing another script
-    }
 
+    private void gameWin()
+    {
+        //Pause game
+        //Show 'win' screen
+        //Show final coin count
+    }
 }
