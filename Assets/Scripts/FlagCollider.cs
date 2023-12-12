@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpikeCollider : MonoBehaviour
+public class FlagCollider : MonoBehaviour
 {
     public GameManager manager;
 
@@ -22,13 +22,12 @@ public class SpikeCollider : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Player has touched spikes");
+            Debug.Log("Player has touched the flag!");
 
             if (manager != null)
             {
-                manager.GetComponent<GameManager>().PlayerDeath();
+                manager.GetComponent<GameManager>().GameWin();
             }
-            
         }
     }
 }

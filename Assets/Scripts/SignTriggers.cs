@@ -27,17 +27,14 @@ public class SignTriggers : MonoBehaviour
             switch (currentSign)
             {
                 case 1:
-                    textDisplay.GetComponent<TextDisplay>().firstPopup();
+                    textDisplay.GetComponent<TextDisplay>().FirstPopup();
                     break;
                 case 2:
-                    textDisplay.GetComponent<TextDisplay>().secondPopup();
+                    textDisplay.GetComponent<TextDisplay>().SecondPopup();
                     break; 
                 case 3:
-                    textDisplay.GetComponent<TextDisplay>().thirdPopup();
+                    textDisplay.GetComponent<TextDisplay>().ThirdPopup();
                     break; 
-                case 4:
-                    textDisplay.GetComponent<TextDisplay>().fourthPopup();
-                    break;
             }
         }
     }
@@ -46,7 +43,7 @@ public class SignTriggers : MonoBehaviour
     {
         if (!inTrigger)
         {
-            textDisplay.GetComponent<TextDisplay>().signPrompt();
+            textDisplay.GetComponent<TextDisplay>().SignPrompt();
 
             if ((other.gameObject.transform.position.z > -15) && other.gameObject.transform.position.z < 15)
             {
@@ -66,13 +63,6 @@ public class SignTriggers : MonoBehaviour
                 currentSign = 3;
             }
 
-            if ((other.gameObject.transform.position.z > 60) && other.gameObject.transform.position.z < 112)
-            {
-                Debug.Log("Player has entered the Fourth Sign Trigger");
-                currentSign = 4;
-            }
-
-
             inTrigger = true;
         }
     }
@@ -86,7 +76,7 @@ public class SignTriggers : MonoBehaviour
         }
     }
 
-    public int getCurrentSign()
+    public int GetCurrentSign()
     {
         return currentSign;
     }
