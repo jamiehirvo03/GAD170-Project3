@@ -20,12 +20,6 @@ public class GameManager : MonoBehaviour
     public List<int> ypos = new List<int>(15) {2, 4, 5, 4, 11, 13, 13, 13, 13, 21, 21, 11, 11, 11, 11};
     public List<int> zpos = new List<int>(15) {10, 22, 42, 53, 53, 66, 78, 83, 92, 110, 110, 106, 91, 73, 52};
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -37,7 +31,8 @@ public class GameManager : MonoBehaviour
 
     //public void PauseGame()
     //{
-
+        //Pause game time
+        //Show pause Menu UI
     //}
 
     public void GameWin()
